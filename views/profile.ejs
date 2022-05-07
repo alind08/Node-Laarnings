@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Page</title>
+    <style>
+        h3{
+            color: blue;
+        }
+        h2{
+            color: green;
+        }
+        h1{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is profile page of <%= user.name%></h1>
+    <h2>His email is <%= user.email%></h2>
+    <h3>He lives in <%= user.city%></h3>
+    <ul>
+        <% user.skills.forEach((item)=>{%>
+                <li> <%= item %>  </li>
+           <% })%>
+    </ul>
+</body>
+</html>
